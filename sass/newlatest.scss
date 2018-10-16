@@ -1,0 +1,96 @@
+@import "variable";
+.container{
+  width: 80%;
+}
+.some_text{
+  margin: 50px 0 30px 0;
+}
+
+.some_info{
+  margin-top: 20px;
+  i{
+    color: $mainColor;
+    margin-right: 10px;
+  }
+}
+#section1{
+  position: relative;
+  margin: 10px 0 30px 0 ;
+  h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .box{
+    margin-right: 20px;
+  }
+  .box:hover{
+    background: #ccc;
+  }
+  .s3{
+    width: 22%;
+  }
+  button{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 1;
+  }
+  #btn1{
+    top: -15px;
+  }
+  #btn2{
+    bottom: -15px;
+  }
+  .btn{
+    width: 80%;
+  }
+  li{
+    text-align: center;
+    line-height: 4;
+  }
+}
+.card-contain{
+  p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+}
+.notice{
+  margin-bottom: 20px;
+  h3{
+    color: $mainColor;
+    text-transform: capitalize;
+  }
+  h3,p{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .some_info{
+    #list{
+      width: 45%;
+
+    }
+    #acticle{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 850px) {
+
+  #section1{
+    .box{
+      margin-left: 5%;
+      margin-bottom: 6%;
+    }
+    .s3 {
+      width: 40%;
+    }
+  }
+}

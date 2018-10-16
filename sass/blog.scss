@@ -1,0 +1,153 @@
+@import "variable";
+
+.post_section{
+  width: 100%;
+  display: flex;
+  padding: 10px 40px 30px 40px;
+  main{
+    #post_box{
+      position: relative;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      margin-top: 20px;
+      &:nth-child(1){
+        margin: 0;
+      }
+      .btn{
+        position: absolute;
+        right: 10px;
+        bottom: 6px;
+      }
+    }
+    width: 100%;
+    margin-right: 20px;
+    li{
+      display: inline-block;
+      margin-left: 10px;
+      text-transform: capitalize;
+    }
+    .flexible{
+      display: flex;
+    }
+    .thumbnail{
+      max-width: 350px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .post_description{
+      width: 80%;
+      margin-left: 20px;
+    }
+  }
+  #ads_social{
+    width: 100%;
+    h1,h2,h3,h4,h5,h6{
+      background-color: $mainColor;
+      padding: 10px;
+      margin: 10px 0 0 0;
+      color: #eee;
+      text-align: center;
+      border-bottom: 4px solid darken($mainColor,10);
+    }
+    .NewsLatest{
+      width: 300px;
+      margin: auto;
+
+      h4,p{
+        text-align: center;
+      }
+    }
+  }
+  .social_follower{
+    width: 300px;
+    margin: auto;
+    div{
+      font-size: 28px;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+    div:nth-child(1){
+      background-color: #44619D;
+      color: #eeeeee;
+    }
+    div:nth-child(2){
+      background-color: #FF0000;
+      color: #eeeeee;
+    }
+    div:nth-child(3){
+      background-color: #1DA1F2;
+      color: #eeeeee;
+    }
+    div:nth-child(4){
+      background-color: #283E4A;
+      color: #eeeeee;
+    }
+  }
+.advertise{
+  width: 300px;
+  margin: auto;
+}
+  .tags{
+    width: 300px;
+    margin: auto;
+    text-align: justify;
+    span{
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: $mainColor;
+      margin-top: 10px;
+      color: #eee;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.page_counter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: $mainColor;
+    border-bottom: 5px solid lighten($mainColor,11);
+    transition: all .2s;
+    cursor: pointer;
+    &:hover{
+      background-color: lighten($mainColor,6);
+      transform: translateY(2px);
+    }
+  }
+  a{
+    color: #eee;
+  }
+}
+
+//media query start here
+@media (max-width: 900px) {
+  .post_section main .flexible {
+      display: block;
+  }
+}
+
+@media (min-width:840px){
+  .post_section{
+  #ads_social{
+    width: 300px;
+  }
+}
+}
+@media (max-width: 840px) {
+ .post_section{
+   display: block;
+ }
+}
